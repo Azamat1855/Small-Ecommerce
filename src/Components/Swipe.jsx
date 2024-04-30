@@ -22,7 +22,7 @@ const Swipe = () => {
   
 return (
   <div className='w-[85%] mx-auto py-10'>
-    <p className='font-bold text-[30px] mb-[20px] text-white'>Highly rated products</p>
+    <p className='font-bold text-[30px] mb-[20px] text-white sm:justify-center'>Highly rated products</p>
     <Swiper
         slidesPerView={1}
         spaceBetween={30}
