@@ -14,7 +14,7 @@ const Footer = () => {
       <FaTelegram className='text-[#73d847] text-[30px]'/>
       <FaGooglePlus className='text-[#73d847] text-[30px]'/>
       </div>
-      <div className='flex gap-[50px] text-[17px] sm:flex-col sm:gap-[20px] sm:items-center lg:gap-[50px]'>
+      <div className='flex gap-[50px] text-[17px] sm:flex sm:flex-col sm:gap-[20px] sm:items-center lg:gap-[50px]'>
       <Link to={"/"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Home</p></Link>
       <Link to={"/products"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Products</p></Link>
       <Link to={"/contact"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Contact</p></Link>
