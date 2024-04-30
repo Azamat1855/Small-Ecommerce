@@ -23,7 +23,7 @@ const Products = () => {
   return (
     <div className='max-w-[85%] mx-auto my-10'>
       <p className='font-bold text-[30px] mb-[20px] text-white'>Products</p>
-      <div className='flex flex-wrap gap-[20px]'>
+      <div className='flex flex-wrap gap-[20px] justify-center'>
       {products.map((product, id) => (
         <div key={id} className="flex bg-white justify-between w-[300px] h-[450px] flex-col rounded-xl shadow-lg shadow-slate-600 ">
         <img src={product.thumbnail} alt="" className='w-[300px] h-[150px] rounded-t-lg'/>
