@@ -17,7 +17,6 @@ const Footer = () => {
       <div className='flex text-[17px] mx-auto items-center lg:w-[37rem] sm:w-[19rem] justify-between'>
       <Link to={"/"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Home</p></Link>
       <Link to={"/products"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Products</p></Link>
-      <Link to={"/contact"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Contact</p></Link>
       <Link to={"/about"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">About</p></Link>
       </div>
     </div>

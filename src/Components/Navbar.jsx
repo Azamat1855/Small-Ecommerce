@@ -9,7 +9,6 @@ const Navbar = () => {
       <div className="flex mx-auto justify-center text-white py-[30px] sm:gap-[10px] lg:gap-[60px]">
       <Link to={"/"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Home</p></Link>
       <Link to={"/products"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Products</p></Link>
-      <Link to={"/contact"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Contact</p></Link>
       <Link to={"/about"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">About</p></Link>
       </div>
       </div>
