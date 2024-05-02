@@ -3,17 +3,17 @@ import { MdDiscount, MdOutlineStar } from 'react-icons/md';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    fetch('https://dummyjson.com/products/')
-      .then(res => res.json())
-      .then(data => {
-        setProducts(data.products);
-        console.log(data.products);
-      })
-      .catch(error => {
-        console.error('Error fetching products:', error);
-      });
+    async function fetchData() {
+      let request = await fetch("https://dummyjson.com/products")
+      let response = await request.json()
+      setProducts(response.products)
+      setLoading(true)
+    }
+
+    fetchData()
   }, []);
 
   const truncateDescription = (description, maxLength) => (
@@ -21,6 +21,8 @@ const Products = () => {
   );
 
   return (
+    loading
+    ?
     <div className='max-w-[85%] mx-auto my-10'>
       <p className='font-bold text-[30px] mb-[20px] text-white'>Products</p>
       <div className='flex flex-wrap gap-[20px] justify-center'>
@@ -41,6 +43,10 @@ const Products = () => {
       </div>
       ))}
     </div>
+    </div>
+    :
+    <div className='flex items-center justify-center h-screen'>
+      <span className="loading loading-spinner loading-lg"></span>
     </div>
   );
 };
