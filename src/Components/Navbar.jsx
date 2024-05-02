@@ -11,7 +11,6 @@ const Navbar = () => {
       <Link to={"/products"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Products</p></Link>
       <Link to={"/contact"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Contact</p></Link>
       <Link to={"/about"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">About</p></Link>
-      <Link to={"/settings"}><p className="hover:text-gray-300 active:scale-90 transition duration-300">Settings</p></Link>
       </div>
       </div>
     </nav>

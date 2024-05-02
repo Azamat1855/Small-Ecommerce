@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Settings from './Pages/Settings';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Home from './Pages/Dashboard';
@@ -17,7 +16,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/settings" element={<Settings />} />
         <Route path="/products" element={<Products />} />
       </Routes>
       <Footer/>
