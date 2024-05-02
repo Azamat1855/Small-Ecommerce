@@ -27,7 +27,7 @@ const Swipe = () => {
 return (
   loading
   ?
-  <div className='w-[85%] mx-auto py-10'>
+  <div className='w-[85%] mx-auto py-10 flex flex-col items-center justify-center'>
     <p className='font-bold text-[30px] mb-[20px] text-white sm:justify-center'>Highly rated products</p>
     <Swiper
         slidesPerView={1}

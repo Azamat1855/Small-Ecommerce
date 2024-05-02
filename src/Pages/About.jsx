@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="flex-col w-[80%] mx-auto py-10 flex gap-[20px]">
+    <div className="flex-col w-[80%] mx-auto py-10 flex gap-[20px] items-center">
       <div>
-        <p className='font-bold text-[30px] mb-[20px] text-white'>About Us</p>
+        <p className='font-bold text-[30px] text-white'>About Us</p>
       </div>
       <div className="text-white flex flex-col gap-[40px]">
         <div className="flex flex-col gap-[20px]">
